@@ -3,31 +3,32 @@ En esta práctica de estrategias programación y estructuras de datos, se nos ha
 
 ```java
 
-   /*
-    Indexa el valor u bajo el índice p.
-    @param p Índice no vacío
-    @param u Valor no negativo
-    Si ya había un valor bajo el mismo índice, el nuevo valor
-    sustituye al anterior.
-    */
-    public void updateStock(String p, int u);
-    
+   
+   /* Devuelve el valor indexado bajo el indice p.
+   * @PRE: p != ""
+   * Si no existe un valor indexado bajo el indice p,
+   * devuelve el valor -1.
+   */
+   public int retrieveStock(String p);
 
-    /* Indexa el valor u bajo el indice p.
-    @PRE: p != "" y u >= 0
-    Si ya habia un valor bajo el mismo indice,
-    el nuevo valor substituye al anterior.
-    */
-    public void updateStock(String p, int u);
 
-    /* Devuelve una secuencia de todos los pares <p,u>
-    presentes en el stock tales que:
-    El valor indexado bajo el índice p es u
-    El índice p comienza por la cadena prefix
-    Además, la secuencia deberá estar ordenada según
-    el orden alfabético de los productos
-    */
-    public SequenceIF<StockPair> listStock(String prefix);
+   /* Indexa el valor u bajo el indice p.
+   * @PRE: p != "" y u >= 0
+   * Si ya habia un valor bajo el mismo indice,
+   * el nuevo valor substituye al anterior.
+   */
+   public void updateStock(String p, int u);
+
+
+   /* Devuelve una secuencia de todos los pares <p,u>
+   * presentes en el stock tales que:
+   * -El valor indexado bajo el índice p es u
+   * -El índice p comienza por la cadena prefix
+   * Además, la secuencia deberá estar ordenada según
+   * el orden alfabético de los productos
+   */
+   public SequenceIF<StockPair> listStock(String prefix);
+
 
 ```
 Las clases que he desarrollado se encuentran dentro de la carpeta pract2022_2023 a continuacion imprimo el esquema de carpetas del proyecto.
